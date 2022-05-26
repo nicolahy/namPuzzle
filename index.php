@@ -32,7 +32,7 @@ if (PHP_SAPI === "cli") {
                                             && !in_array($h, [$a, $b, $c, $d, $e, $f, $g, $i], true)
                                             && !in_array($i, [$a, $b, $c, $d, $e, $f, $g, $h], true)) {
                                             echo sprintf(
-                                                "[#%d] => %d + 13 * %d / %d + %d + 12 * %d - %d - 11 + %d * %d / %d - 10 = %d\n",
+                                                "[#%03d] => %d + 13 * %d / %d + %d + 12 * %d - %d - 11 + %d * %d / %d - 10 = %d\n",
                                                 ++$counterOK, $a, $b, $c, $d, $e, $f, $g, $h, $i, $expectedResult);
                                         }
                                     }
