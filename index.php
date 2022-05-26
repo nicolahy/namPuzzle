@@ -1,6 +1,4 @@
 <?php
-
-declare(strict_types=1);
 set_time_limit(0);
 $timeStart = microtime(true);
 
@@ -21,7 +19,7 @@ for ($a = 1; $a <= 9; ++$a) {
                                 for ($i = 1; $i <= 9; ++$i) {
                                     ++$counterAll;
                                     $result = $a + 13 * $b / $c + $d + 12 * $e - $f - 11 + $g * $h / $i - 10;
-                                    if ($result == $expectedResult
+                                    if ($result === $expectedResult
                                         && !in_array($a, [$b, $c, $d, $e, $f, $g, $h, $i], true)
                                         && !in_array($b, [$a, $c, $d, $e, $f, $g, $h, $i], true)
                                         && !in_array($c, [$a, $b, $d, $e, $f, $g, $h, $i], true)
