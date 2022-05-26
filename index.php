@@ -49,4 +49,6 @@ if (PHP_SAPI === "cli") {
     $timeScript = round($timeEnd - $timeStart, 2);
     $counterAllFormatted = number_format((float) $counterAll, 0, ".", " ");
     echo "{$colorGreenPrexixTerminal}{$counterOK} positive results on {$counterAllFormatted} calculations performed in {$timeScript} seconds{$colorGreenSuffixTerminal}\n";
+} else {
+    echo "[KO] The script must be executed in the terminal only\n";
 }
